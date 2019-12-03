@@ -1,0 +1,24 @@
+#%RAML 1.0
+version: 1.0
+title: hello-world-1
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/f6c04a4b-e98b-4742-b0fb-029f26fe4633/api/v1/ # baseUri: http://localhost:8081/api/v1/
+/sayGreetings:
+  post:
+    body:
+      application/json:
+        properties:
+          name:
+            type: string
+            required: false
+            default: "mister"
+    responses:
+      200:
+        body:
+          application/json:
+            properties:
+              result:
+                type: string
+                default: "hello world" 
+                  
+              
+
