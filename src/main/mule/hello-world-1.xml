@@ -132,7 +132,7 @@ output application/json
 output application/json
 ---
 {
-	result: "Hello " ++ payload.name
+	result: 'Hello ' ++ payload.name as String
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
